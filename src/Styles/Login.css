@@ -1,0 +1,36 @@
+.loginform {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    margin-left: 500px;
+    margin-top: 180px;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #C6CCD0;
+}
+.loginform  input{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+.loginform button{
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #a4a4a4;
+    transition-duration: 1s;
+    width: 200px;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+
+.loginform button:hover{
+    background-color: #bbb6b6;
+    transform: scale(1.1);
+}
