@@ -10,20 +10,18 @@ import Register from "./Components/Register.jsx";
 
 function App() {
   return (
-    <>
-    {/* <BrowserRouter> */}
+    <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Category />} />
         <Route path="/men" element={<Men />} />
-        <Route path="/Women" element={<Women />} />
-        <Route path="/Kids" element={<Kids />} />
-        <Route path="/Accessories" element={<Accessories />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Reg" element={<Register />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/kids" element={<Kids />} />
+        <Route path="/accessories" element={<Accessories />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/reg" element={<Register />} />
       </Routes>
-   {/* </BrowserRouter> */}
-    </>
+    </BrowserRouter>
   );
 }
 

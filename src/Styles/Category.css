@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -63,4 +64,71 @@
 .coverpage img{
   width: 100%;
   height: 500px;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.top-bar {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin: 20px auto;
+}
+
+.page {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.products {
+  flex: 1;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.products-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.products-header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.coverpage{
+  margin-top: 50px;
+}
+.coverpage img{
+  width: 100%;
+  height: 500px;
+>>>>>>> 2591678f67b9df7a12de2aeaef5945965f7b1f81
 }
