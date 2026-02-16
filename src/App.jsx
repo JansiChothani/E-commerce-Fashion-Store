@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Category from "./Components/Category.jsx";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
+import Category from "./Components/Category";
 import Men from "./Components/Men";
-import Women from "./Components/Women.jsx";
-import Kids from "./Components/Kids.jsx";
-import Accessories from "./Components/Accessories.jsx";
-import Login from "./Components/Login.jsx";
-import Register from "./Components/Register.jsx";
+import Women from "./Components/Women";
+import Kids from "./Components/Kids";
+import Accessories from "./Components/Accessories";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Category />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/reg" element={<Register />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

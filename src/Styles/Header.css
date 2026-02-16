@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .header {
   border-bottom: 1px solid #eee;
   background: #C6CCD0;
@@ -57,63 +56,3 @@
   cursor: pointer;
   font-size: 18px;
 }
-=======
-.header {
-  border-bottom: 1px solid #eee;
-  background: #C6CCD0;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 0;
-}
-
-.logo-img {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.logo-img img{
-  width: 200px;
-  height: 100px;
-}
-
-.logo span {
-  display: block;
-  font-size: 11px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  color: #777;
-}
-
-.nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #000;
-  font-size: 15px;
-}
-
-.nav a.active {
-  border-bottom: 2px solid black;
-  padding-bottom: 4px;
-}
-
-.header-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.header-icons input {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  font-size: 13px;
-}
-
-.header-icons span {
-  cursor: pointer;
-  font-size: 18px;
-}
->>>>>>> 2591678f67b9df7a12de2aeaef5945965f7b1f81
