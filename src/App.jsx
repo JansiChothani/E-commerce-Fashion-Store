@@ -7,10 +7,14 @@ import Kids from "./Components/Kids";
 import Accessories from "./Components/Accessories";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
+import { Provider } from "react-redux";
+import Store from "./Store/Store";
+import Cart from "./Components/Cart";
 
 function App() {
   return (
     <>
+    <Provider store={Store}>
       <Header />
       <Routes>
         <Route path="/" element={<Category />} />
@@ -20,7 +24,9 @@ function App() {
         <Route path="/accessories" element={<Accessories />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reg" element={<Register />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
+    </Provider>
     </>
   );
 }

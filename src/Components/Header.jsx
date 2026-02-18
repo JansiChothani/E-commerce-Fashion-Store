@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import "../Styles/Header.css";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+
+  let name = useSelector((state) => state.cart);
+
   return (
     <header className="header">
       <div className="container header-inner">
@@ -24,7 +28,9 @@ const Header = () => {
         <div className="header-icons">
           <span>♡</span>
           <Link to="/Login">👤</Link>
-          <span>🛒</span>
+          <Link to="/cart">
+          <span>🛒<sup>{name.length}</sup></span>
+          </Link>
         </div>
       </div>
     </header>

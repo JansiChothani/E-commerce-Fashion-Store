@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "../Styles/ProductCard.css";
+import { useDispatch, useSelector } from "react-redux";
+import { add } from "../Store/CartSlice";
 
 const products = [
   {
@@ -65,6 +67,20 @@ const products = [
 ];
 
 const ProductCard = () => {
+
+  let name = useSelector((state) => state.cart);
+  let dispatch = useDispatch();
+
+  let ADD = (item) => {
+    let a = name.find((i) => i.id === item.id)
+    if (!a) {
+      dispatch(add(item))
+      alert("item Added to cart");
+    }
+    else {
+      alert("Item already in cart");
+    }
+  }
   return (
     <div className="home-grid">
       {products.map((item) => (
@@ -77,7 +93,7 @@ const ProductCard = () => {
           <div className="product-info">
             <h3>{item.title}</h3>
             <p className="price">$ {item.price}</p>
-            <button>Buy Now</button>
+            <button onClick={() => ADD(item)}>Add to Cart</button>
           </div>
         </div>
       ))}
